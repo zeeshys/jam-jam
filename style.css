@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+
+    background: url("https://wallpapers.com/images/featured/lana-del-rey-aesthetic-ewyevj6xw9d7ykdl.jpg")
+    no-repeat center center / cover fixed;
+}
+
+/* overlay biar dreamy */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(245, 235, 220, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+/* CARD UTAMA */
+.sanrio-card {
+    position: relative;
+    z-index: 2;
+
+    background: rgba(255, 250, 240, 0.85);
+    backdrop-filter: blur(10px);
+
+    padding: 3.5rem 2.5rem;
+    border-radius: 40px;
+
+    border: 6px solid #e6d3b3;
+
+    box-shadow:
+        0 10px 0px #e6d3b3,
+        0 25px 60px rgba(120, 90, 60, 0.3);
+
+    text-align: center;
+    min-width: 360px;
+}
+
+/* TANGGAL */
+#tgl-masehi {
+    font-size: 1.2rem;
+    color: #7a5c3e;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* JAM */
+#jam-display {
+    font-size: 5rem;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.angka-jam {
+    background: linear-gradient(to bottom, #a67c52, #5c4033);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* TITIK DUA */
+.pemisah {
+    color: #a67c52;
+    font-size: 4rem;
+    margin: 0 8px;
+}
+
+/* TANGGAL JAWA */
+#tgl-jawa {
+    background: #f5e6d3;
+    color: #5c4033;
+
+    padding: 12px 25px;
+    border-radius: 25px;
+
+    font-size: 1.1rem;
+    border: 2px dashed #d2b48c;
+
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: #7a5c3e;
+}
